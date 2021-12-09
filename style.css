@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@100&family=Lora&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Prata&family=Source+Sans+Pro:wght@200&family=Work+Sans:wght@100;200;300&display=swap');
+
+:root{
+    --primary-color: #4359d4;
+    --primary-font: 'Work Sans', sans-serif;
+}
+
+body{
+box-sizing: border-box;
+background-image: url("./Background.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+font-family: var(--primary-font);
+}
+
+.container{
+    height: 100vh;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding-bottom: 10px;
+}
+
+.card .head{
+    background-color: var(--primary-color);
+    background-image: url("./Pattern.png");
+    color: white;
+    padding: 11% 5%;
+    border-radius: 8px 8px 0 0;
+}
+
+.head h4{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.form-container{
+    margin-top: 5%;
+}
+
+.form-container p{
+    margin-bottom: 6%;
+    font-size: 0.9rem;
+    font-weight: 590;
+}
+
+.form-container , .comments{
+    padding: 0 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    gap: 4px;
+}
+
+input[type="email"]{
+    border: none;
+    background-color: #f0f0f0;
+    width: 69%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+
+input[type="email"]::placeholder{
+    font-size: 0.9rem;
+    padding-left: 7%;
+    font-family: var(--primary-font);
+}
+
+input[type="email"]:focus{
+    outline: none;
+}
+
+#submit{
+    background-color: var(--primary-color);
+    padding: 10px 25px;
+    color: #fff;
+    height: 42px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+
+.note{
+    text-align: left;
+    margin-left: 2px;
+    font-weight: 298;
+}
+
+#avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.76rem;
+    gap: 6px;
+    text-align: justify;
+}
+
+.person h3{
+    font-weight: 900;
+}
+
+.person p{
+    margin-top: -15%;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#comment{
+    font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES. */
+/* LAPTOPS */
+@media (max-width: 1024px) {
+    .card{
+        width: 50%;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 700px){
+    .card{
+        width: 65%;
+    }
+}
+
+@media (max-width: 500px){
+    .card{
+        width: 75%;
+    }
+}
+
+@media (max-width: 450px){
+    .card{
+        width: 82%;
+    }
+}
+
+@media (max-width: 400px){
+    .card{
+        width: 87%;
+    }
+}
+
+/* MOBILES */
+
+@media (max-width: 380px){
+    .card{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 280px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type="email"]{
+        width: 83%;
+    }
+
+    #submit{
+        width: 50%;
+    }
+}
