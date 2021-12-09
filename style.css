@@ -173,6 +173,10 @@ input[type="email"]:focus{
         height: 100%;
         border-radius: 0;
     }
+    
+    .form-container{
+    padding-top: 10%;
+    }
 }
 
 @media (max-width: 280px) {
